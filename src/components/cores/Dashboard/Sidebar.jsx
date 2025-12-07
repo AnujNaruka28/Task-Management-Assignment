@@ -1,0 +1,107 @@
+"use client";
+
+import {
+    Sidebar,
+    SidebarContent,
+    SidebarFooter,
+    SidebarHeader,
+    SidebarTrigger,
+    useSidebar,
+} from "@/components/ui/sidebar";
+import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
+import {
+    Activity
+} from "lucide-react";
+import { Logo } from "./logo";
+import DashboardNavigation from "./nav-main";
+import { NotificationsPopover } from "./nav-notifications";
+import { ProfileChecker } from "./profile-checker";
+
+const sampleNotifications = [
+    {
+        id: "1",
+        avatar: "/avatars/01.png",
+        fallback: "OM",
+        text: "New order received.",
+        time: "10m ago",
+    },
+    {
+        id: "2",
+        avatar: "/avatars/02.png",
+        fallback: "JL",
+        text: "Server upgrade completed.",
+        time: "1h ago",
+    },
+    {
+        id: "3",
+        avatar: "/avatars/03.png",
+        fallback: "HH",
+        text: "New user signed up.",
+        time: "2h ago",
+    },
+];
+
+const dashboardRoutes = [
+    {
+        id: "tasks",
+        title: "Tasks",
+        icon: <Activity className="size-4" />,
+        link: "/dashboard/tasks",
+    },
+];
+
+const user = {
+    name: "Anuj Naruka",
+    plan: "Free",
+    avatar: "/avatars/01.png",
+};
+
+export function DashboardSidebar() {
+    const { state } = useSidebar();
+    const isCollapsed = state === "collapsed";
+
+    return (
+        <Sidebar variant="inset" collapsible="icon">
+            <SidebarHeader
+                className={cn(
+                    "flex md:pt-3.5",
+                    isCollapsed
+                        ? "flex-row items-center justify-between gap-y-4 md:flex-col md:items-start md:justify-start"
+                        : "flex-row items-center justify-between"
+                )}
+            >
+                <a href="#" className="flex items-center gap-2">
+                    <Logo className="h-8 w-8" />
+                    {!isCollapsed && (
+                        <span className="font-semibold text-stone-50">
+                            Taskii
+                        </span>
+                    )}
+                </a>
+
+                <motion.div
+                    key={isCollapsed ? "header-collapsed" : "header-expanded"}
+                    className={cn(
+                        "flex items-center gap-2",
+                        isCollapsed ? "flex-row md:flex-col-reverse" : "flex-row"
+                    )}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <NotificationsPopover notifications={sampleNotifications} />
+                    <SidebarTrigger />
+                </motion.div>
+            </SidebarHeader>
+            <SidebarContent className="gap-4 px-2 py-4">
+                <DashboardNavigation routes={dashboardRoutes} />
+            </SidebarContent>
+            <SidebarFooter className="px-2">
+                <ProfileChecker user={user} />
+            </SidebarFooter>
+        </Sidebar>
+    );
+}
+
+export default DashboardSidebar;

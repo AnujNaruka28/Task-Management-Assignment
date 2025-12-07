@@ -1,0 +1,227 @@
+[
+    {
+        "title": "Design system updates",
+        "description": "Refine typography scale and update primary color palette tokens.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "high",
+        "dueDate": "2025-12-10",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Accessibility audit",
+        "description": "Run automated checks and manual review for WCAG 2.1 compliance.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "high",
+        "dueDate": "2025-12-12",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Mobile navigation interactions",
+        "description": "Improve swipe gestures and transition animations for mobile menu.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "medium",
+        "dueDate": "2025-12-18",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Optimize image assets",
+        "description": "Convert all PNGs to WebP and implement responsive image loading.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "medium",
+        "dueDate": "2025-12-20",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Update README documentation",
+        "description": "Add setup instructions and contribution guidelines.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "low",
+        "dueDate": "2025-12-25",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Setup CI/CD pipeline",
+        "description": "Configure GitHub Actions for automated testing and deployment.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "low",
+        "dueDate": "2025-12-28",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Refactor button component",
+        "description": "Simplify variant logic and improve prop types.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "low",
+        "dueDate": "2025-12-30",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Dependency updates",
+        "description": "Update React and Next.js to latest stable versions.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "low",
+        "dueDate": "2026-01-05",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "User authentication flow",
+        "description": "Implement JWT handling and secure route protection.",
+        "status": "in_progress",
+        "column": "in_progress",
+        "priority": "high",
+        "dueDate": "2025-12-15",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Dashboard analytics widget",
+        "description": "Create reusable chart components for user activity metrics.",
+        "status": "in_progress",
+        "column": "in_progress",
+        "priority": "high",
+        "dueDate": "2025-12-16",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Profile settings page",
+        "description": "Allow users to update avatar and change password.",
+        "status": "in_progress",
+        "column": "in_progress",
+        "priority": "medium",
+        "dueDate": "2025-12-19",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Notification system",
+        "description": "Implement real-time toast notifications for user actions.",
+        "status": "in_progress",
+        "column": "in_progress",
+        "priority": "medium",
+        "dueDate": "2025-12-22",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Search functionality",
+        "description": "Implement global search with debounced input.",
+        "status": "in_progress",
+        "column": "in_progress",
+        "priority": "medium",
+        "dueDate": "2025-12-24",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Footer redesign",
+        "description": "Update footer layout to include social links and newsletter signup.",
+        "status": "in_progress",
+        "column": "in_progress",
+        "priority": "low",
+        "dueDate": "2026-01-02",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Error boundary implementation",
+        "description": "Create fallback UI for application crashes.",
+        "status": "in_progress",
+        "column": "in_progress",
+        "priority": "low",
+        "dueDate": "2026-01-08",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Unit tests for utilities",
+        "description": "Write Jest tests for date formatting and helper functions.",
+        "status": "in_progress",
+        "column": "in_progress",
+        "priority": "low",
+        "dueDate": "2026-01-10",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "API integration",
+        "description": "Connect frontend services to backend REST endpoints.",
+        "status": "done",
+        "column": "done",
+        "priority": "high",
+        "dueDate": "2025-12-05",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Initial project setup",
+        "description": "Initialize repository, install formatting tools and husky hooks.",
+        "status": "done",
+        "column": "done",
+        "priority": "high",
+        "dueDate": "2025-12-01",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Landing page hero section",
+        "description": "Implement responsive hero banner with CTA.",
+        "status": "done",
+        "column": "done",
+        "priority": "medium",
+        "dueDate": "2025-12-03",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Contact form validation",
+        "description": "Add Zod schema validation for contact form inputs.",
+        "status": "done",
+        "column": "done",
+        "priority": "medium",
+        "dueDate": "2025-12-04",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Dark mode toggle",
+        "description": "Implement theme switching using next-themes.",
+        "status": "done",
+        "column": "done",
+        "priority": "medium",
+        "dueDate": "2025-12-06",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Favicon update",
+        "description": "Generate and replace all favicon assets.",
+        "status": "done",
+        "column": "done",
+        "priority": "low",
+        "dueDate": "2025-12-07",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Font optimization",
+        "description": "Configure next/font for Google Fonts integration.",
+        "status": "done",
+        "column": "done",
+        "priority": "low",
+        "dueDate": "2025-12-02",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "SEO meta tags",
+        "description": "Add OpenGraph and Twitter card meta tags to all pages.",
+        "status": "done",
+        "column": "done",
+        "priority": "low",
+        "dueDate": "2025-12-05",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    },
+    {
+        "title": "Mobile Responsiveness Check",
+        "description": "Verify layout integrity on devices < 768px width.",
+        "status": "todo",
+        "column": "todo",
+        "priority": "high",
+        "dueDate": "2025-12-15",
+        "userId": "6935b86c0da7db7b5f45bf72"
+    }
+]
