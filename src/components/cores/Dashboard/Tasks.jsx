@@ -55,7 +55,6 @@ export default function Tasks() {
         try {
             setIsLoading(true);
             const response = await apiService.getTasks();
-            console.log(response);
             const fetchedTasks = response.tasks.map(task => ({
                 ...task,
                 id: task._id,

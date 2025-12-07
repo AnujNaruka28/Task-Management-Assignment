@@ -48,13 +48,8 @@ export default function CommonUserForm({ type = "login" }) {
                     description: 'Welcome to your new dashboard',
                 });
             }
-
-            console.log('Auth result:', result);
-
             // Verify token is stored
             const storedToken = localStorage.getItem('access_token');
-            console.log('Stored token:', storedToken);
-
             // Dispatch storage event for Navbar update
             window.dispatchEvent(new Event("storage"));
 
