@@ -36,9 +36,13 @@ export async function POST(req) {
 
     return NextResponse.json({ token, user: { email: user.email, id: user._id } }, { status: 200 });
   } catch (error) {
+    console.error('Login error:', error);
     if (error.message === 'Too Many Requests') {
-        return NextResponse.json({ error: 'Too many requests, please try again later.' }, { status: 429 });
+      return NextResponse.json({ error: 'Too many requests, please try again later.' }, { status: 429 });
     }
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    return NextResponse.json({
+      error: 'Internal Server Error',
+      details: process.env.NODE_ENV === 'development' ? error.message : undefined
+    }, { status: 500 });
   }
 }
